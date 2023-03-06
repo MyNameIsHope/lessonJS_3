@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		// Задача№5
+
+		// З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+		const userDriverCategory = prompt('ВВедіть категорію водія A,B,C')
+
+
+		if (userDriverCategory === 'A' | userDriverCategory === 'a')
+			document.write(`Ви можете керувати мотоциклом`)
+		else if (userDriverCategory === 'B' | userDriverCategory === 'b')
+			document.write(`Ви можете керувати легковим автомобілем`)
+		else if (userDriverCategory === 'С' | userDriverCategory === 'с')
+			document.write(`Ви можете керувати вантажним автомобілем`)
+		else
+			documrnt.write(`Введіть коректну категорі водія`)
+
+	</script>
+</body>
+
+</html>

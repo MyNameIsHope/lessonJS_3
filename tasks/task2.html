@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- Задача №2 -->
+
+	<!-- З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше,
+		якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн. -->
+
+
+	<script>
+		const priceProduct = parseFloat(prompt('Вкажіть ціну товару'))
+		const amountOfMoney = parseFloat(prompt('Вкажіть кількість грошей'))
+		const priсeLotoTicket = 4
+
+		const balanceOfMoney = amountOfMoney - priceProduct
+
+
+
+		if (priceProduct < amountOfMoney && balanceOfMoney < priсeLotoTicket)
+			document.write(`у вас достатньо грошей щоб купити товар`)
+		else if (balanceOfMoney >= priсeLotoTicket)
+			document.write(`У вас залишилась решта. Ви можете придбати лотарейний білет за 4 грн`)
+		else
+			document.write(`У вас не достатьно грошей`)
+
+
+
+	</script>
+</body>
+
+</html>
